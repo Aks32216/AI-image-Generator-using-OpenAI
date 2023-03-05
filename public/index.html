@@ -4,9 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css//spinner.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Openai Image Generator</title>
 </head>
 <body>
-    hello
+    <header>
+        <div class="header">
+            <div class="logo"><h1>OpenAI Image Generator</h1></div>
+            <a class="openailink" href="https://platform.openai.com/docs/guides/images"><h2>OpenAI Docs</h2></a>
+        </div>
+    </header>
+    <div class="formInput">
+        <h2>Describe An Image</h2>
+        <input type="text" id="prompt">
+        <select name="imgSize" id="size">
+            <option value="Small">Small</option>
+            <option value="Medium" selected>Medium</option>
+            <option value="Large">Large</option>
+        </select>
+        <button type="submit" class="button">Generate</button>
+    </div>
+    
+    <div class="imageSection">
+        <span class="loader"></span>
+        <h2 class="msg"></h2>
+        <img class="mainImg" src="" alt="">
+    </div>
+
+    <script src="./scripts/main.js"></script>
 </body>
 </html>

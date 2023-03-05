@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem 1rem 4rem;
+    background-color: blue;
+}
+
+.openailink{
+    /* text-decoration: none; */
+    color: black;
+}
+
+.formInput{
+    background-color: green;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageSection{
+    height: 60rem;
+    background-color: black;
+}
