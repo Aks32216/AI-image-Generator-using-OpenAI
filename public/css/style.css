@@ -7,25 +7,76 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 4rem 1rem 4rem;
-    background-color: blue;
+    padding: 1rem 6rem 1rem 6rem;
+    background-color: #2C3333;
+    color: #fff;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logoImg{
+    padding-right: 10px;
+    max-height: 160px;
+    max-width: 60px;
 }
 
 .openailink{
     /* text-decoration: none; */
-    color: black;
+    color: #fff;
 }
 
 .formInput{
-    background-color: green;
-    height: 30vh;
+    background-color: #2E4F4F;
+    color: #fff;
+    height: 18rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+
+.formInput>*{
+    margin:10px;
+    width: 20rem;
+    text-align: center;
+    padding: 0.4rem;
+    border-radius: 10px;
+}
+
+#size{
+    font-size: 90%;
+}
+
+.button{
+    width: 10rem;
+    font-size: 100%;
+    color: #fff;
+    background-color: #2C3333;
+}
+
+.display{
+    background-color: #a9c6c7;
+    padding-bottom: 40rem;
+}
+
+.errorSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    background-color: #a9c6c7;
+}
+
 .imageSection{
-    height: 60rem;
-    background-color: black;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.mainImg{
+    display: block;
+    margin: auto;
 }

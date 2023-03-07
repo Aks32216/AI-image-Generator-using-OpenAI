@@ -11,7 +11,10 @@
 <body>
     <header>
         <div class="header">
-            <div class="logo"><h1>OpenAI Image Generator</h1></div>
+            <div class="logo">
+                <img src="./openai.png" alt="" class="logoImg">
+                <h1>OpenAI Image Generator</h1>
+            </div>
             <a class="openailink" href="https://platform.openai.com/docs/guides/images"><h2>OpenAI Docs</h2></a>
         </div>
     </header>
@@ -26,12 +29,15 @@
         <button type="submit" class="button">Generate</button>
     </div>
     
-    <div class="imageSection">
-        <span class="loader"></span>
-        <h2 class="msg"></h2>
-        <img class="mainImg" src="" alt="">
+    <div class="display">
+        <div class="errorSection">
+            <h2 class="msg"></h2>
+        </div>
+        <div class="imageSection">
+            <img class="mainImg" src="./openai.png" alt="">
+        </div>
     </div>
-
+    <div class="spinner"></div>
     <script src="./scripts/main.js"></script>
 </body>
 </html>

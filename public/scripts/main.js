@@ -4,6 +4,7 @@ let imgSize=document.querySelector("#size");
 
 async function generateImageRequest(prompt,size){
     try {
+        showSpinner();
         let response=await fetch('/openai/generateimage',{
             method:'POST',
             headers:{
@@ -16,6 +17,7 @@ async function generateImageRequest(prompt,size){
         })
     
         if(!response.ok){
+            removeSpinner();
             throw new Error('That Image could not be generated');
         }
 
@@ -23,10 +25,19 @@ async function generateImageRequest(prompt,size){
         const imgUrl=data.data;
 
         document.querySelector('.mainImg').src=imgUrl;
+        removeSpinner();
     } catch (error) {
         document.querySelector('.msg').textContent=error;
     }
     
+}
+
+function showSpinner(){
+    document.querySelector('.spinner').classList.add('show');
+}
+
+function removeSpinner(){
+    document.querySelector('.spinner').classList.remove('show');
 }
 
 button.addEventListener('click',()=>{
